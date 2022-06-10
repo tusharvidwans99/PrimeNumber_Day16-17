@@ -8,7 +8,8 @@
     {
         public static void Main(string[] args)
         {
-            List<int> primes = new List<int>();
+
+            StackUsingLinkedlist stack = new StackUsingLinkedlist();
 
 
             Check check = new Check();
@@ -28,23 +29,14 @@
                 {
                     if (check.isPalindrome(i))
                     {
-                        primes.Add(i);
+                        stack.push(i);
 
                     }
                 }
 
             }
 
-            Program program = new Program();
-            program.printList(primes);
-        }
-
-        public void printList(List<int> Primes)
-        {
-            foreach(int element in Primes)
-            {
-                Console.WriteLine(element);
-            }
+           stack.display();
         }
 
         
