@@ -8,7 +8,7 @@ namespace PrimeNumberRange
 {
     public class Check
     {
-        public void isPalindrome(int PrimeNum)
+        public bool isPalindrome(int PrimeNum)
         {
 
             int rem, rev = 0, num = PrimeNum;
@@ -22,11 +22,11 @@ namespace PrimeNumberRange
 
             if(rev == PrimeNum)
             {
-                Console.WriteLine("It is Palindrome");
+                return true;
             }
             else
             {
-                Console.WriteLine("It is not Palindrome");
+                return false;
             }
 
         }

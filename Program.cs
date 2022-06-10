@@ -20,13 +20,17 @@
 
 
 
-            Console.WriteLine("Prime Numbers are: ");
+            Console.WriteLine($"Prime Numbers which is Anagrams too in the range {start}-{end} are: ");
 
             for (int i=start; i<=end;i++)
             {
                 if (check.isPrime(i))
                 {
-                    primes.Add(i);
+                    if (check.isPalindrome(i))
+                    {
+                        primes.Add(i);
+
+                    }
                 }
 
             }
