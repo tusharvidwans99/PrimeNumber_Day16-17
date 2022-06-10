@@ -30,5 +30,28 @@ namespace PrimeNumberRange
             }
 
         }
+
+        public bool isPrime(int num)
+        {
+            int status = 1;
+
+            for (int i = 2; i < num; i++)
+            {
+                if (num % i == 0)
+                {
+                    //Console.WriteLine($"{num} is not a prime number");
+                  
+                    return false;
+                }
+            }
+            if (status == 1)
+            {
+                return true;
+            }
+            return false;
+
+        }
+
+        
     }
 }
